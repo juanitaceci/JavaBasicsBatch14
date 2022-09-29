@@ -1,0 +1,70 @@
+
+
+
+ Java Class 08 Notes
+
+      Loops in Java:
+  1. While
+  2. Do While
+  3. For Loop
+  4. For Each Loop
+  5. Enhanced For Loop
+  
+  When do we use:
+  --> For Loop: When we know number of repetitions/Iterations in advanced
+  for(Initialization; condition; increment/decrement){
+    Code repeat;
+    }
+    
+    While Loop & Do While Loop: When we don't know the number of repetitions
+    
+    While vs. Do While
+    
+   --> While checks condition first--> Then executes codes
+    while(boolean condition){
+    code to repeat;
+    }
+    
+   --> Do While executes codes--> Then checks condition
+   do{
+   code to repeat;
+   }while(boolean condition);
+   
+   Break Keyword:
+    The Java break is used to break loop or switch statement. It breaks the 
+    current flow of the program at specified condition. In case of inner loop, it 
+    breaks only inner loop.
+    
+    for (int i = 0; i < 10; i++) { 
+    				   ----->//This is where you do not want to place a break; or code will stop
+     if (i == 4) {
+     break;           ----> //Break will stop loop So it is best to use inside an If and not For Loop begining.
+     }
+     System.out.println(i);
+      } 
+   
+   Continue Keyword:
+    The Java continue keyword can be used in any of the loop control structures. 
+    It causes the loop to immediately jump to the next iteration of the loop.
+    
+    for (int i = 0; i < 10; i++) {
+     if (i == 4) {
+     continue;
+     }
+    System.out.println(i);
+     }
+     
+    Another Example how to use Continue:
+     // I want to print numbers from 1 to 20 except number 3, 7 and 11
+			for (int i=1; i<=20; i++) {
+			if(i==3 || i==7 || i==11) {
+			continue;
+			}
+			System.out.print(i+" ");
+			}
+     
+     
+      
+    
+    
+    
